@@ -1,0 +1,17 @@
+#
+# Near Field Communication (NFC) devices
+#
+
+menuconfig NFC_DEVICES
+	bool "Near Field Communication (NFC) devices"
+	default y
+	---help---
+	  You'll have to say Y if your computer contains an NFC device that
+	  you want to use under Linux.
+
+	  You can say N here if you don't have any Near Field Communication
+	  devices connected to your computer.
+
+if NFC_DEVICES
+source "drivers/nfc/cxd224x/Kconfig"
+endif # NFC_DEVICES
