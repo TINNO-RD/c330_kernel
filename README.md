@@ -1,0 +1,2 @@
+# c330_kernel
+C330_GPL_SOURCECODE
